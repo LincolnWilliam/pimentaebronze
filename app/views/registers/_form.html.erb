@@ -11,15 +11,19 @@
     </div>
   <% end %>
 
-  <div class="field">
+<div class="row">
+  <div class="field form-group col-xs-10">
     <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
+    <%= form.text_field :name , class: 'form-control' %> <!--#class: form-control pra aumentar o campo-->
+    </div>
+<div>
 
-  <div class="field">
+<div class="row">
+  <div class="field form-group col-xs-2">
     <%= form.label :contact %>
-    <%= form.text_field :contact %>
+    <%= form.text_field :contact, class: 'form-control' %>
   </div>
+</div>
 
   <div class="field">
     <%= form.label :dateregister %>
@@ -31,7 +35,9 @@
     <%= form.date_select :birthday %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="row">
+   <div class="actions col-xs-12 text-right">
+     <%= form.submit 'Salvar registro', class: 'btn btn-primary'%>
+   </div>
   </div>
 <% end %>

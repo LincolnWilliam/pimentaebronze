@@ -11,10 +11,12 @@
     </div>
   <% end %>
 
-  <div class="field">
+<div class='row'>
+  <div class="field from-group col-xs-10">
     <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, class: 'form-control' %>
   </div>
+</div>  
 
   <div class="field">
     <%= form.label :service %>
